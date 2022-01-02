@@ -1,6 +1,6 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
   <%= link_to root_path, class: "navbar-brand" do %>
-    <%= image_tag "https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/logo.png" %>
+    <%= image_tag "https://res.cloudinary.com/da2krghvd/image/upload/v1641111992/Portfolio/Fichier_40_4x.png" %>
   <% end %>
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,3 +34,8 @@
     </ul>
   </div>
 </div>
+<script>
+  $(document).on('scroll', function (e) {
+    $('.navbar-lewagon').css('opacity', ($(document).scrollTop() / 500));
+  });
+</script>
