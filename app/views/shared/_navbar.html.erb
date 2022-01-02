@@ -26,16 +26,19 @@
           </div>
         </li>
       <% else %>
-        <%= link_to 'service', pages_service_path, class: 'nav-link' %>
-        <%= link_to 'parcours', pages_journey_path, class: 'nav-link' %>
-        <%= link_to 'portfolio', pages_portfolio_path, class: 'nav-link' %>
-        <%= link_to "Login", new_user_session_path, class: "nav-link" %>
+        <%= link_to 'service', pages_service_path, class: 'link' %>
+        <%= link_to 'parcours', pages_journey_path, class: 'link' %>
+        <%= link_to 'portfolio', pages_portfolio_path, class: 'link' %>
+        <%= link_to "Login", new_user_session_path, class: "btn call-to-action" %>
       <% end %>
     </ul>
   </div>
 </div>
+<div class="navbar navbar-expand-sm navbar-light navbar-lewagon-background">
+</div>
 <script>
   $(document).on('scroll', function (e) {
-    $('.navbar-lewagon').css('opacity', ($(document).scrollTop() / 500));
+    $('.navbar-lewagon-background').css('opacity', ($(document).scrollTop() / 500));
   });
 </script>
+

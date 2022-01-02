@@ -22,3 +22,20 @@
   background: tomato;
   color: white;
 }
+
+.btn-moving {
+  color: $brand;
+  border: 1px solid $brand;
+  padding: 8px 24px;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+  margin-bottom: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.btn-moving:hover {
+  background: $brand;
+  color: white;
+}
+
