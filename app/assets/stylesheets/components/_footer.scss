@@ -24,15 +24,22 @@
 .footer .fa-heart {
   color: #D23333;
 }
-
 .banner-footer{
   background-size: cover;
   background-position: center;
-  padding: 150px 0px 300px 0px;
+  padding: 100px 0px 220px 0px;
 }
 .link-to-me{
   background-color: #101010;
   opacity: 0.9;
   border-radius: 6px;
   padding: 20px;
+}
+.link-to-me p {
+  text-align: center;
+  font-size: 20px;
+  font-weight: lighter;
+  color: white;
+  opacity: .7;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
 }

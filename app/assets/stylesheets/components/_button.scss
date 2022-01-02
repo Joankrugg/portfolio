@@ -1,12 +1,24 @@
 .btn-flat {
-  color: white;
+  color: $brand;
+  border: 1px solid $brand;
   padding: 8px 24px;
   border-radius: 4px;
-  background: #1EDD88;
   transition: background 0.3s ease;
 }
 
 .btn-flat:hover {
-  background: #1BCB7F;
+  background: $brand;
+  color: white;
+}
+
+.call-to-action{
+  color: tomato;
+  border: 1px solid tomato;
+  padding: 8px 24px;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+.call-to-action:hover {
+  background: tomato;
   color: white;
 }
