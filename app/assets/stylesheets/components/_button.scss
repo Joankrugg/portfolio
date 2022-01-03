@@ -39,3 +39,24 @@
   color: white;
 }
 
+.btn-nav-modern{
+  background-color: $light-gray;
+  font-weight: lighter;
+  border-radius: 4px;
+  color: #4B535B;
+  font-size: 22px;
+  text-align: center;
+  opacity: 0.7;
+  padding: 15px;
+  margin-bottom: 10px;
+}
+
+.btn-nav-modern:hover{
+  background-color: $brand;
+  opacity: 1;
+  color: white;
+}
+
+a:hover{
+  text-decoration: none;
+}
