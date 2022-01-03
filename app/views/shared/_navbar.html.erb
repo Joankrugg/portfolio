@@ -3,37 +3,20 @@
     <%= image_tag "https://res.cloudinary.com/da2krghvd/image/upload/v1641111992/Portfolio/Fichier_40_4x.png" %>
   <% end %>
 
-
   <i class="fas fa-bars navbar-toggler" type="button" data-toggle="modal" data-target="#exampleModal" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"></i>
-
-
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-      <% if user_signed_in? %>
-        <li class="nav-item active">
-          <%= link_to "Home", "#", class: "nav-link" %>
-        </li>
-        <li class="nav-item">
-          <%= link_to "Messages", "#", class: "nav-link" %>
-        </li>
-        <li class="nav-item dropdown">
-          <%= image_tag "https://kitt.lewagon.com/placeholder/users/ssaunier", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
-          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-            <%= link_to "Action", "#", class: "dropdown-item" %>
-            <%= link_to "Another action", "#", class: "dropdown-item" %>
-            <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
-          </div>
-        </li>
-      <% else %>
-        <%= link_to 'service', pages_service_path, class: 'link' %>
-        <%= link_to 'parcours', pages_journey_path, class: 'link' %>
-        <%= link_to 'portfolio', pages_portfolio_path, class: 'link' %>
-        <%= link_to "Login", new_user_session_path, class: "btn call-to-action" %>
-      <% end %>
+      <%= link_to 'service', pages_service_path, class: 'link' %>
+      <%= link_to 'parcours', pages_journey_path, class: 'link' %>
+      <%= link_to 'portfolio', pages_portfolio_path, class: 'link' %>
+      <%= link_to "Login", new_user_registration_path, class: "call-to-action" %>
     </ul>
   </div>
+
 </div>
+
+
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon-background">
 </div>
 <script>

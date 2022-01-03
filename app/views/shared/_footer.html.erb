@@ -53,6 +53,11 @@
         <%= link_to pages_portfolio_path do %>
           <p class="btn-nav-modern">Porfolio</p>
         <% end %>
+        <% if user_signed_in? %>
+          <%= link_to destroy_user_session_path, method: :delete do %>
+            <p class="btn-nav-modern">Log out</p>
+          <% end %>
+        <% end %>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
