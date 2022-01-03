@@ -10,7 +10,13 @@
       <%= link_to 'service', pages_service_path, class: 'link' %>
       <%= link_to 'parcours', pages_journey_path, class: 'link' %>
       <%= link_to 'portfolio', pages_portfolio_path, class: 'link' %>
-      <%= link_to "Login", new_user_registration_path, class: "call-to-action" %>
+      <% if user_signed_in? %>
+        <%= link_to current_user do %>
+          <p class="call-to-action">Compte</p>
+        <% end %>
+      <% else %>
+        <%= link_to 'Connexion', new_user_registration_path, class: "call-to-action"  %>
+      <% end %>
     </ul>
   </div>
 
