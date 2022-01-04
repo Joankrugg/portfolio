@@ -35,14 +35,8 @@
         </button>
       </div>
       <div class="modal-body">
-        <% if user_signed_in? %>
-          <%= link_to current_user do %>
-            <p class="btn-nav-modern">Compte</p>
-          <% end %>
-        <% else %>
-          <%= link_to new_user_registration_path do %>
-            <p class="btn-nav-modern">Login</p>
-          <% end %>
+        <%= link_to root_path do %>
+          <p class="btn-nav-modern">Accueil</p>
         <% end %>
         <%= link_to pages_service_path do %>
           <p class="btn-nav-modern">Service</p>
@@ -54,8 +48,15 @@
           <p class="btn-nav-modern">Porfolio</p>
         <% end %>
         <% if user_signed_in? %>
+          <%= link_to current_user do %>
+            <p class="btn-nav-modern">Compte</p>
+          <% end %>
           <%= link_to destroy_user_session_path, method: :delete do %>
             <p class="btn-nav-modern">Log out</p>
+          <% end %>
+        <% else %>
+          <%= link_to new_user_registration_path do %>
+            <p class="btn-nav-modern">Parlons ensemble</p>
           <% end %>
         <% end %>
       </div>
