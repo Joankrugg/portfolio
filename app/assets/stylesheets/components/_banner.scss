@@ -8,7 +8,7 @@
   margin: 0;
   color: white;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-  font-size: 34px;
+  font-size: 32px;
   font-weight: lighter;
 }
 
@@ -23,10 +23,6 @@
 .blur{
   filter: blur(8px);
   -webkit-filter: blur(8px);
-}
-
-h1 strong{
-  color: $brand;
 }
 
 p strong{

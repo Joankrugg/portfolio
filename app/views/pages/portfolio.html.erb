@@ -1,9 +1,15 @@
 <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://res.cloudinary.com/da2krghvd/image/upload/v1640972322/Portfolio/pawel-czerwinski-blue.jpg);">
   <div class="container">
-    <h1>Visons ensemble <strong>les étoiles</strong> !</h1>
-    <p>Je réalise votre projet digital</p>
-    <a class="btn btn-flat" href="#">Apply now</a>
-    <a class="btn call-to-action" href="#">Apply now</a>
+    <h1>Ensemble, <strong>visons les étoiles !</strong></h1>
+    <p> Je suis <strong>votre </strong>chef de projet digital</p>
+    <a class="btn btn-flat" href="#discovery">Mes activités</a>
+    <%=link_to 'Parlons ensemble', new_user_registration_path, class: 'btn call-to-action' %>
   </div>
 </div>
+<div class="break"></div>
+<div class="transition">
+  <h1>Les projets</h1>
+</div>
+<%= render 'shared/image_grid' %>
+<div class="break"></div>
 <%= render 'shared/footer' %>
