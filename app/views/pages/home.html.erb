@@ -15,6 +15,9 @@
 
 <div class="banner" id='discovery' style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://res.cloudinary.com/da2krghvd/image/upload/v1641304244/Portfolio/swagg.jpg);">
   <div class="container">
+    <div class="col-4 mx-auto">
+      <h1>Mes Savoir-faire</h1>
+    </div>
     <div class="row">
       <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3">
         <div class="card">
@@ -22,7 +25,7 @@
           <h2 class='card-title'>Gestion de Projet web</h2>
           <div class="card-infos">
             <div>
-              <p>Pour vous, je gère les projets web du brief à la livraison des éléments. Mon rôle est de faire l’interface entre le client et les différents prestataires afin d’apporter la solution la plus  adaptée à la demande</p>
+              <p>Pour vous, je gère les projets web du brief à la livraison des éléments. Mon rôle est de faire l’interface entre le client et les différents prestataires afin d’apporter la solution la plus adaptée à la demande</p>
             </div>
           </div>
           <%= link_to 'Exemples', pages_portfolio_path, class: "btn btn-moving" %>
@@ -68,8 +71,11 @@
     </div>
   </div>
 </div>
-<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://res.cloudinary.com/da2krghvd/image/upload/v1641110266/Portfolio/nick-nice-gPm8h3DS1s4-unsplash.jpg);">
+<div class="banner" id='journey' style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://res.cloudinary.com/da2krghvd/image/upload/v1641110266/Portfolio/nick-nice-gPm8h3DS1s4-unsplash.jpg);">
   <div class="container">
+    <div class="col-4 mx-auto">
+      <h1>Mon parcours</h1>
+    </div>
     <div class="row">
       <div class="col-12">
         <div class="cv-link">
@@ -120,5 +126,10 @@
     </div>
   </div>
 </div>
+<div class="break"></div>
+<div class="transition">
+  <h1>Les projets</h1>
+</div>
 <%= render 'shared/image_grid' %>
+<div class="break"></div>
 <%= render 'shared/footer' %>
