@@ -1,6 +1,93 @@
+.deep-skills{
+  background-image: linear-gradient(180deg, black, #343435);
+  padding: 50px 0px;
+}
+
 .skill{
   display: block;
   width: 180px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.skill h1{
+  padding: 20px 0px;
+  text-align: center;
+  color: $brand;
+}
+
+.skill p{
+  text-align: center;
+}
+
+#skillz{
+  background-size: cover;
+  background-position: center;
+  padding: 10px 0;
+}
+
+.square{
+  border: 1px solid white;
+  margin-bottom: 10px;
+  background-color: black;
+  opacity: 0.5;
+  width: 100%;
+  height: 300px;
+  p{
+    color: white;
+    text-align: center;
+    font-size: 16px;
+  }
+}
+.square:hover{
+  background-color: white;
+  opacity: 0.2;
+  cursor: pointer;
+  p{
+    color: black;
+  }
+}
+
+.square img{
+  width: 90px;
+  display: block;
+  margin: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.square-white{
+  position: relative;
+  border: 1px solid white;
+  margin-bottom: 10px;
+  background-color: white;
+  opacity: 0.2;
+  width: 100%;
+  height: 300px;
+  p{
+    color: black;
+    text-align: center;
+  }
+}
+
+.square-white:hover{
+  background-color: black;
+  opacity: 0.5;
+  cursor: pointer;
+  p{
+    color: white;
+    text-align: center;
+  }
+}
+
+.square-white img{
+  width: 90px;
+  display: block;
+  margin: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.description{
+  padding: 20px;
 }
