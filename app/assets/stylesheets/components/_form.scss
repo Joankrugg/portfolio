@@ -1,11 +1,27 @@
+.wallpaper{
+  background-color: black;
+}
 .login-form{
-  margin-top: 160px;
+  margin-top: 120px;
   padding: 80px;
+  background: rgba(11, 11, 11, .8);
+  color: white;
+  border-radius: 6px;
 }
 
 .login-form h2{
   margin-bottom: 40px;
   font-size: 30px;
+  color: white;
+}
+
+.login-form .btn-flat{
+  width: 100%;
+  margin-top: 10px;
+}
+
+.login-form .call-to-action{
+  margin-top: 30px;
 }
 
 .login-form .form-inputs{
