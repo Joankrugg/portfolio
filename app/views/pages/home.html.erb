@@ -1,12 +1,19 @@
-<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://res.cloudinary.com/da2krghvd/image/upload/v1640972322/Portfolio/pawel-czerwinski-blue.jpg);">
-  <div class="container">
-    <h1>Visons ensemble <strong>les étoiles</strong> !</h1>
-    <p>Je réalise votre projet digital</p>
-    <a class="btn btn-flat" href="#">Apply now</a>
-    <a class="btn call-to-action" href="#">Apply now</a>
+<div class="video-container">
+  <video id="background-video" autoplay loop muted>
+    <source src="https://res.cloudinary.com/da2krghvd/video/upload/v1641291030/Portfolio/homepage.mp4" type="video/mp4">
+  </video>
+
+  <div class="content">
+    <div class="container">
+      <h1>Ensemble, <strong>visons les étoiles !</strong></h1>
+      <p> Je suis <strong>votre </strong>chef de projet digital</p>
+      <%=link_to 'Parlons ensemble', new_user_registration_path, class: 'btn call-to-action' %>
+      <a class="btn btn-flat" href="#discovery">Mes activités</a>
+    </div>
   </div>
 </div>
-<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://res.cloudinary.com/da2krghvd/image/upload/e_blur:2000/v1640972930/Portfolio/anthony-delanoix-b5POxb2aL9o-unsplash.jpg);">
+
+<div class="banner" id='discovery' style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://res.cloudinary.com/da2krghvd/image/upload/e_blur:2000/v1640972930/Portfolio/anthony-delanoix-b5POxb2aL9o-unsplash.jpg);">
   <div class="container">
     <div class="row">
       <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3">
@@ -18,7 +25,7 @@
               <p>Pour vous, je gère les projets web du brief à la livraison des éléments. Mon rôle est de faire l’interface entre le client et les différents prestataires afin d’apporter la solution la plus  adaptée à la demande</p>
             </div>
           </div>
-          <a class="btn btn-moving" href="#">Apply now</a>
+          <%= link_to 'Exemples', pages_portfolio_path, class: "btn btn-moving" %>
         </div>
       </div>
       <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3">
@@ -31,7 +38,7 @@
               </p>
             </div>
           </div>
-          <a class="btn btn-moving" href="#">Apply now</a>
+          <%= link_to 'Exemples', pages_portfolio_path, class: "btn btn-moving" %>
         </div>
       </div>
       <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3">
@@ -43,7 +50,7 @@
               <p>Mon sens de la créativité me permets de proposer des webdesign en accord avec votre charte graphique et votre stratégie webmarketing. Pour la réalisation de votre site Internet, je peux utiliser des CMS comme WordPress ou Prestashop ou bien effectuer directement son intégration en utilisant les langages HTML/CSS, Ruby / MySQL </p>
             </div>
           </div>
-          <a class="btn btn-moving" href="#">Apply now</a>
+          <%= link_to 'Exemples', pages_portfolio_path, class: "btn btn-moving" %>
         </div>
       </div>
       <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
@@ -55,7 +62,7 @@
               <p>Afin que votre site Internet soit très bien placé dans les résultats de recherche de Google, je suis en mesure d’optimiser votre site web et son contenu. Je propose donc mes services en référencement naturel, rédaction web.</p>
             </div>
           </div>
-          <a class="btn btn-moving" href="#">Apply now</a>
+          <%= link_to 'Exemples', pages_portfolio_path, class: "btn btn-moving" %>
         </div>
       </div>
     </div>
