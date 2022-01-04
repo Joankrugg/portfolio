@@ -25,7 +25,11 @@
   -webkit-filter: blur(8px);
 }
 
-strong{
+h1 strong{
+  color: $brand;
+}
+
+p strong{
   color: tomato;
 }
 
@@ -37,6 +41,7 @@ strong{
 
 .video-container {
   position: relative;
+  height: 100vh;
 }
 
 #background-video {
