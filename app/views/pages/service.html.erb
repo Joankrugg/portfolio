@@ -1,9 +1,11 @@
-<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://res.cloudinary.com/da2krghvd/image/upload/v1641304244/Portfolio/swagg.jpg);">
+<div class="banner" id='service' style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://res.cloudinary.com/da2krghvd/image/upload/v1641304244/Portfolio/swagg.jpg);">
   <div class="container">
     <h1>Visons ensemble <strong>les étoiles</strong> !</h1>
     <p>Je réalise votre projet digital</p>
-    <a class="btn btn-flat" href="#">Apply now</a>
-    <a class="btn call-to-action" href="#">Apply now</a>
+    <div class="choice">
+      <a class="btn btn-flat" href="#">Apply now</a>
+      <a class="btn call-to-action" href="#">Apply now</a>
+    </div>
   </div>
 </div>
 <div class="techno">
@@ -122,4 +124,12 @@
     </div>
   </div>
 </div>
+<div class="break"></div>
+<div class="transition">
+  <h1>Quelques Réalisations ?</h1>
+  <div class="choice">
+    <%= link_to 'Portfolio', pages_portfolio_path, class: 'btn btn-flat' %>
+  </div>
+</div>
+<div class="break"></div>
 <%= render 'shared/footer' %>
