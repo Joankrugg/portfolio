@@ -6,10 +6,11 @@
   text-align: center;
 }
 
+
 .timeline{
   width: 4px;
-  margin-right: 50%;
-  margin-left: 50%;
+  margin-right: 65%;
+  margin-left: 35%;
   height: 70px;
   background-color: $brand;
   position: relative;
@@ -17,23 +18,23 @@
 
 .line {
   position: absolute;
-  width: 500px;
-  left: -248px;
+  width: 460px;
+  left: -100px;
   top: 0;
 }
 
 .left {
   position: absolute;
   top: 8px;
-  width: 248px;
+  width: 100px;
   left: 0px;
   text-align: center;
 }
 
 .right {
   position: absolute;
-  width: 236px;
-  left: 262px;
+  width: 256px;
+  left: 144px;
   text-align: center;
 }
 
@@ -45,7 +46,7 @@
   background-color: white;
   border: 1px solid $brand;
   border-radius: 50%;
-  left: 244px;
+  left: 96px;
 }
 
 #life{
@@ -64,3 +65,4 @@
 .image{
   height: 40px;
 }
+
