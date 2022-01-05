@@ -11,9 +11,9 @@
       <%= link_to 'parcours', pages_journey_path, class: 'link' %>
       <%= link_to 'portfolio', pages_portfolio_path, class: 'link' %>
       <% if user_signed_in? %>
-        <%= link_to "à l'écoute", current_user, class: "call-to-action" %>
+        <%= link_to "à l'écoute", current_user, class: "btn btn-flat" %>
       <% else %>
-        <%= link_to 'Connexion', new_user_registration_path, class: "call-to-action", id: 'connexion'  %>
+        <%= link_to 'Connexion', new_user_registration_path, class: "btn btn-flat", id: 'connexion'  %>
       <% end %>
     </ul>
   </div>
