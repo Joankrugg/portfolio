@@ -19,8 +19,7 @@
 }
 
 .navbar-lewagon .navbar-brand img {
-  margin-top: -10px;
-  width: 100px;
+  width: 140px;
 }
 
 .link{
@@ -30,26 +29,26 @@
   padding: 8px 24px;
   border-radius: 4px;
   color: white;
-  z-index: 2;
+  z-index: 3;
+  margin-top: -5px;
+  margin-bottom: 5px;
 }
 
 .link:hover{
   background-color: white;
   text-decoration: none;
-  font-weight: bold;
-  color: black;
-  margin-right: 20px;
-  border-radius: 4px;
   font-weight: lighter;
-  z-index: 2;
+  color: black;
 }
 
 .navbar-light .navbar-toggler{
   color: white;
   font-size: 40px;
+  margin-top: -5px;
+  margin-bottom: 5px;
+  z-index: 3;
 }
 
 .navbar-toggler {
   padding: 0px;
-
 }

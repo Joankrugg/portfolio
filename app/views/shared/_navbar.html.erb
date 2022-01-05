@@ -13,7 +13,7 @@
       <% if user_signed_in? %>
         <%= link_to "à l'écoute", current_user, class: "call-to-action" %>
       <% else %>
-        <%= link_to 'Connexion', new_user_registration_path, class: "call-to-action"  %>
+        <%= link_to 'Connexion', new_user_registration_path, class: "call-to-action", id: 'connexion'  %>
       <% end %>
     </ul>
   </div>
