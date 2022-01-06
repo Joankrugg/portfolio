@@ -25,44 +25,4 @@
 </div>
 
 <!-- Modal -->
-<div class="modal fade navigation" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Navigation</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <%= link_to root_path do %>
-          <p class="btn-nav-modern">Accueil</p>
-        <% end %>
-        <%= link_to pages_service_path do %>
-          <p class="btn-nav-modern">Service</p>
-        <% end %>
-        <%= link_to pages_journey_path do %>
-          <p class="btn-nav-modern">Parcours</p>
-        <% end %>
-        <%= link_to pages_portfolio_path do %>
-          <p class="btn-nav-modern">Porfolio</p>
-        <% end %>
-        <% if user_signed_in? %>
-          <%= link_to current_user do %>
-            <p class="btn-nav-modern">Compte</p>
-          <% end %>
-          <%= link_to destroy_user_session_path, method: :delete do %>
-            <p class="btn-nav-modern">Log out</p>
-          <% end %>
-        <% else %>
-          <%= link_to new_user_registration_path do %>
-            <p class="btn-nav-modern">Parlons ensemble</p>
-          <% end %>
-        <% end %>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
-      </div>
-    </div>
-  </div>
-</div>
+<%= render 'shared/navigation' %>
