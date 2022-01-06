@@ -19,11 +19,12 @@
   margin-top: 8px;
   vertical-align: middle;
   width: 100%;
+  opacity: 0.1;
 }
 
 .column img:hover {
   cursor: pointer;
-  opacity: 0.1;
+  opacity: 1;
 }
 
 .each{

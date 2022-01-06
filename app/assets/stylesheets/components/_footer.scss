@@ -35,15 +35,22 @@
 .banner-footer{
   background-size: cover;
   background-position: center;
-  padding: 115px 0px 220px 0px;
+  padding: 130px 0px 106px 0px;
 }
 .link-to-me{
-  background-color: #101010;
-  opacity: 0.9;
   border-radius: 6px;
   padding: 20px;
 }
+
+.link-to-me img{
+  width: 20%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .link-to-me p {
+  z-index: 2;
   text-align: center;
   font-size: 20px;
   font-weight: lighter;
