@@ -4,6 +4,7 @@
   -ms-flex-wrap: wrap; /* IE10 */
   flex-wrap: wrap;
   padding: 0 4px;
+  background-color: black;
 }
 
 /* Create four equal columns that sits next to each other */
@@ -22,7 +23,7 @@
 
 .column img:hover {
   cursor: pointer;
-  opacity: .2;
+  opacity: 0.1;
 }
 
 .each{
