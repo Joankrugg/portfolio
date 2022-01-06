@@ -15,7 +15,8 @@
   padding: 0 4px;
 }
 
-.column img {
+
+.element{
   margin-top: 8px;
   vertical-align: middle;
   width: 100%;
@@ -24,6 +25,9 @@
 
 .column img:hover {
   cursor: pointer;
+}
+
+.active{
   opacity: 1;
 }
 
@@ -36,15 +40,8 @@
   bottom: 0;
   text-align: center;
   color: $brand;
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity .2s, visibility .2s;
 }
 
-.each:hover .legend {
-  visibility: visible;
-  opacity: 1;
-}
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
   .column {
@@ -57,8 +54,8 @@
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .column {
-    -ms-flex: 50%;
-    flex: 50%;
-    max-width: 50%;
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
   }
 }
