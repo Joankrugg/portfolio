@@ -1,4 +1,4 @@
-class UserController < ApplicationController
+class UsersController < ApplicationController
   def index
   end
 
@@ -9,6 +9,7 @@ class UserController < ApplicationController
   end
 
   def show
+    @user = User.find_by_id(:user_id)
   end
 
   def edit

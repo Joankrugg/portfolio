@@ -25,6 +25,25 @@
   opacity: .4;
 }
 
+.each{
+  position: relative;
+}
+
+.legend{
+  position: absolute;
+  top: 30;
+  bottom: 0;
+  text-align: center;
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .2s, visibility .2s;
+}
+
+.each:hover .legend {
+  visibility: visible;
+  opacity: 1;
+}
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
   .column {

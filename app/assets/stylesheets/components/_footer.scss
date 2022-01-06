@@ -24,6 +24,14 @@
 .footer .fa-star {
   color: $brand;
 }
+
+.footer-copyright{
+  font-size: 16px;
+  font-weight: lighter;
+  color: #a4a4a4;
+  opacity: .7;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
 .banner-footer{
   background-size: cover;
   background-position: center;
