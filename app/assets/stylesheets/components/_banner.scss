@@ -29,6 +29,10 @@ p strong{
   color: $brand;
 }
 
+h1 strong{
+  color: $brand;
+}
+
 .wallpaper {
   background-size: cover;
   background-position: center;
@@ -102,6 +106,7 @@ p {
 .transition{
   background-color: black;
   width: 100%;
+  padding-bottom: 30px;
 }
 .transition h1 {
   padding: 40px 0px;

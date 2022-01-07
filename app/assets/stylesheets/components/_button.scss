@@ -13,14 +13,15 @@
 }
 
 .call-to-action{
-  color: tomato;
-  border: 1px solid tomato;
+  color: $brand;
+  background: linear-gradient(180deg, black, transparent);
+  border: 1px solid white;
   padding: 8px 24px;
   border-radius: 4px;
   transition: background 0.3s ease;
 }
 .call-to-action:hover {
-  background: tomato;
+  background: $brand;
   color: white;
 }
 
@@ -75,7 +76,7 @@ a:hover{
   text-decoration: none;
 }
 
-#clum{
+.center{
   display: block;
   width: 200px;
   margin-left: auto;
