@@ -5,3 +5,11 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+Service.create({name:'Gestion de projet web'})
+Service.create({name:'Webmarketing'})
+Service.create({name:'Webdesign & Ergonomie'})
+Service.create({name:'SEO & rédaction web'})
+
+Choice.create({name:'Recrutement'})
+Choice.create({name:'Prestation'})
+Choice.create({name:'Demande de renseignement'})

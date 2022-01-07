@@ -1,0 +1,17 @@
+<div class="banner" id='user' style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://res.cloudinary.com/da2krghvd/image/upload/v1641110266/Portfolio/nick-nice-gPm8h3DS1s4-unsplash.jpg);">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-8 col-sm-10 col-xs-12 mx-auto">
+        <div class="form">
+          <h2>Faites votre demande </h2>
+          <%= simple_form_for @project do |f| %>
+            <%= f.association :services, as: :check_boxes %>
+            <%= f.association :choice %>
+            <%= f.input :question %>
+            <%= f.button :submit, "VALIDER", class: 'btn btn-flat' %>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
