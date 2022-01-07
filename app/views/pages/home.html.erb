@@ -15,7 +15,7 @@
 <div class="banner" id='discovery' style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://res.cloudinary.com/da2krghvd/image/upload/v1641304244/Portfolio/swagg.jpg);">
   <div class="container">
     <h1>Bienvenue!</h1>
-    <p style="width: 460px; display: block; margin: 0px auto 30px auto;">Après avoir baigné près de 15 années dans le Digital appliqué à l'événementiel, j'ai pour vocation d'apporter mon expertise et mes compétences naturelles à des projets d'une toute nouvelle envergure.</p>
+    <p class="section-description">>Après avoir baigné près de 15 années dans le Digital appliqué à l'événementiel, j'ai pour vocation d'apporter mon expertise et mes compétences naturelles à des projets d'une toute nouvelle envergure.</p>
   </div>
   <div class="container">
     <div class="col-12 mx-auto">
@@ -77,8 +77,8 @@
 <div class="transition">
   <div class="container">
     <h1>Mon Parcours</h1>
-    <p style="font-size: 20px; width: 460px; display: block; margin: 0px auto 30px auto;">Découvrez mon parcours atypique, souvent apprécié pour l'évantail de compétences qui en découle.</p>
-    <a href="#journey"><i class="fas fa-arrow-alt-circle-down" style="font-size: 60px; color: white; width: 60px; display: block; margin: 0px auto 30px auto;"></i></a>
+    <p class="section-description">Découvrez mon parcours atypique, souvent apprécié pour l'évantail de compétences qui en découle.</p>
+    <a href="#journey"><i class="fas fa-arrow-alt-circle-down action"></i></a>
   </div>
 </div>
 <div class="banner" id='journey' style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://res.cloudinary.com/da2krghvd/image/upload/v1641110266/Portfolio/nick-nice-gPm8h3DS1s4-unsplash.jpg);">
@@ -111,7 +111,7 @@
               <p>Passionné de musique, j'ai eu à coeur de <strong>mener un projet</strong> de vie dans les domaines du spectacle et de me consacrer à <strong>la production, réalisation et diffusion de projets.</strong></p>
             </div>
           </div>
-          <%= link_to 'Réalisation', pages_journey_path, class: 'btn btn-flat' %>
+          <%= link_to 'Réalisations', pages_journey_path, class: 'btn btn-flat' %>
         </div>
       </div>
     </div>
@@ -133,9 +133,14 @@
     </div>
   </div>
 </div>
-<div class="break"></div>
 <div class="transition">
-  <h1>Les projets</h1>
+  <div class="container">
+    <h1>Les Projets</h1>
+    <p class="section-description">Entrez dans ma galerie, c'est un peu comme chambre noire... découvrez mes références. Pour consulter les travaux en eux-mêmes, cliquez sur la flêche</p>
+    <%= link_to pages_portfolio_path do %>
+      <i class="fas fa-arrow-alt-circle-down action"></i>
+    <% end %>
+  </div>
 </div>
 <%= render 'shared/image_grid' %>
 <%= render 'shared/footer' %>

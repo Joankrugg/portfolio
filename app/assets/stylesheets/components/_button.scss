@@ -83,3 +83,15 @@ a:hover{
   margin-right: auto;
   margin-bottom: 20px;
 }
+
+.action{
+  font-size: 60px;
+  color: white;
+  width: 60px;
+  display: block;
+  margin: 0px auto 30px auto;
+}
+
+.action:hover{
+  color: $brand;
+}
