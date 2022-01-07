@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   devise_for :users
   root to: 'pages#home'
+  get 'download_pdf', to: "pages#download_pdf"
   get 'pages/journey', to: 'pages#journey'
   get 'pages/service', to: 'pages#service'
   get 'pages/portfolio', to: 'pages#portfolio'
