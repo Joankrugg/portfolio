@@ -2,32 +2,55 @@
   <div class="container">
     <h1>Parez la pierre,<strong> elle devient merveille !</strong></h1>
     <p>Explorez <strong>les projets</strong> sur lesquelles j'ai pu intervenir</p>
-    <%=link_to 'Parlons ensemble', new_user_registration_path, class: 'btn call-to-action center' %>
+    <%= link_to 'Parlons ensemble', new_user_registration_path, class: 'btn call-to-action center' %>
   </div>
 </div>
-<div class="break"></div>
 <div class="transition">
-  <h1>Les projets</h1>
+  <div class="container">
+    <h1>Découvrez les projets</h1>
+    <p class="section-description">Cliquez sur les images de manière à découvrir quelques travaux </p>
+  </div>
 </div>
 <div class="row straight">
   <div class="column">
-    <img src="https://res.cloudinary.com/da2krghvd/image/upload/c_fill,h_1424,w_2160/v1641474656/Portfolio/Beertrackr.jpg" class='element' style="width:100%">
-    <img src="https://res.cloudinary.com/da2krghvd/image/upload/c_fill,g_faces,h_570,w_850/v1641393677/Portfolio/12096476_10206742720078070_4145122384275427656_n.jpg" class='element' style="width:100%">
+    <%= link_to 'https://laptitechope.herokuapp.com/', target: '_blank' do %>
+      <img src="https://res.cloudinary.com/da2krghvd/image/upload/c_fill,h_1424,w_2160/v1641474656/Portfolio/Beertrackr.jpg" class='element' style="width:100%">
+    <% end %>
+    <%= link_to 'https://www.youtube.com/watch?v=U6BRqfSK8mo', target: '_blank' do %>
+      <img src="https://res.cloudinary.com/da2krghvd/image/upload/c_fill,g_faces,h_570,w_850/v1641393677/Portfolio/12096476_10206742720078070_4145122384275427656_n.jpg" class='element' style="width:100%">
+    <% end %>
   </div>
   <div class="column">
-    <img src="https://res.cloudinary.com/da2krghvd/image/upload/c_fill,h_862,w_1300/v1545402774/Admin/modern_box_home.jpg" class='element' style="width:100%">
-
-    <img src="https://res.cloudinary.com/da2krghvd/image/upload/c_fill,g_center,h_530,w_800/v1641395108/Portfolio/501_116180681.jpg" class='element' style="width:100%">
+    <%= link_to 'https://modernlabel.herokuapp.com/', target: '_blank' do %>
+      <img src="https://res.cloudinary.com/da2krghvd/image/upload/c_fill,h_862,w_1300/v1545402774/Admin/modern_box_home.jpg" class='element' style="width:100%">
+    <% end %>
+    <%= link_to 'https://fr-fr.facebook.com/harrietsbordeaux/', target: '_blank' do %>
+      <img src="https://res.cloudinary.com/da2krghvd/image/upload/c_fill,g_center,h_530,w_800/v1641395108/Portfolio/501_116180681.jpg" class='element' style="width:100%">
+    <% end %>
   </div>
   <div class="column">
-    <img src="https://res.cloudinary.com/da2krghvd/image/upload/c_fill,g_north_east,h_1096,w_1640/v1641475108/Portfolio/17991474_633801330156375_8251513696756050330_o.jpg.jpg" class='element' style="width:100%">
-    <img src="https://res.cloudinary.com/da2krghvd/image/upload/v1641386801/Portfolio/WRE.jpg" class='element' style="width:100%">
-
+    <%= link_to 'https://www.facebook.com/HelloYvon/', target: '_blank' do %>
+      <img src="https://res.cloudinary.com/da2krghvd/image/upload/c_fill,g_north_east,h_1096,w_1640/v1641475108/Portfolio/17991474_633801330156375_8251513696756050330_o.jpg.jpg" class='element' style="width:100%">
+    <% end %>
+    <%= link_to 'https://youtu.be/lYKrMT_BA2I', target: '_blank' do %>
+      <img src="https://res.cloudinary.com/da2krghvd/image/upload/v1641386801/Portfolio/WRE.jpg" class='element' style="width:100%">
+    <% end %>
   </div>
   <div class="column">
-    <img src="https://res.cloudinary.com/da2krghvd/image/upload/v1641393427/Portfolio/giphy_3.gif"  class='element' style="width:100%">
-    <img src="https://res.cloudinary.com/da2krghvd/image/upload/c_fill,h_174,w_260/v1641394270/Portfolio/dbbtc2huoopchc6zw99s.jpg" class='element' style="width:100%">
+    <%= link_to 'https://the-scars.herokuapp.com/', target: '_blank' do %>
+      <img src="https://res.cloudinary.com/da2krghvd/image/upload/v1641393427/Portfolio/giphy_3.gif"  class='element' style="width:100%">
+    <% end %>
+    <%= link_to 'https://fr-fr.facebook.com/lebaldesgrandshommes/', target: '_blank' do %>
+      <img src="https://res.cloudinary.com/da2krghvd/image/upload/c_fill,h_174,w_260/v1641394270/Portfolio/dbbtc2huoopchc6zw99s.jpg" class='element' style="width:100%">
+    <% end %>
   </div>
 </div>
-<div class="break"></div>
+<div class="transition">
+  <div class="container">
+    <h1>Merci à vous!</h1>
+    <p class="section-description">Restons en contact</p>
+    <p class="section-description">C'est ici.</p>
+    <a href='#carte_de_visite'><i class="fas fa-arrow-alt-circle-down action"></i></a>
+  </div>
+</div>
 <%= render 'shared/footer' %>
