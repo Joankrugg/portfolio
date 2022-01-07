@@ -2,10 +2,7 @@
   <div class="container">
     <h1>Un parcours <strong>motivé par les passions</strong> !</h1>
     <p>Je confronte les idées au réel</p>
-    <div class="choice">
-      <a class="btn btn-flat" href="#">Apply now</a>
-      <a class="btn call-to-action" href="#">Apply now</a>
-    </div>
+    <a class="btn btn-flat center" href="#life">Regardez !</a>
   </div>
 </div>
 <div class="banner" id='life' style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://res.cloudinary.com/da2krghvd/image/upload/v1641400063/scott-webb-UjupleczBOY-unsplash_sty3qr.jpg);">
@@ -177,6 +174,16 @@
         </div>
       </div>
     </div>
+  </div>
+</div>
+<div class="transition">
+  <div class="container">
+    <h1>Voir les réalisations</h1>
+    <%= link_to 'Portfolio', pages_portfolio_path, class: 'btn btn-flat center' %>
+    <div class='center' style='height: 2px; background: white; margin-top: 30px;'></div>
+    <p class="section-description">restons en contact</p>
+    <p class="section-description">C'est ici.</p>
+    <a href='#carte_de_visite'><i class="fas fa-arrow-alt-circle-down action"></i></a>
   </div>
 </div>
 <%= render 'shared/footer' %>

@@ -2,13 +2,11 @@
   <div class="container">
     <h1>Un Objectif <strong>à atteindre</strong></h1>
     <p>Un <strong>savoir-faire</strong> à apporter</p>
-    <div class="choice">
-      <a class="btn btn-flat" href="#">Apply now</a>
-      <a class="btn call-to-action" href="#">Apply now</a>
+      <a class="btn btn-flat center" href="#techno-skillz">On y va!</a>
     </div>
   </div>
 </div>
-<div class="techno">
+<div class="techno" id='techno-skillz'>
   <div class="container inside">
     <%= image_tag "https://res.cloudinary.com/da2krghvd/image/upload/e_grayscale/v1641152750/Portfolio/pngwing.com.png", class: 'avatar-square' %>
     <%= image_tag "https://res.cloudinary.com/da2krghvd/image/upload/e_grayscale/v1641152747/Portfolio/pngegg.png", class: 'avatar-square' %>
@@ -121,9 +119,7 @@
 <div class="break"></div>
 <div class="transition">
   <h1>Quelques Réalisations ?</h1>
-  <div class="choice">
-    <%= link_to 'Portfolio', pages_portfolio_path, class: 'btn btn-flat' %>
-  </div>
+  <%= link_to 'Portfolio', pages_portfolio_path, class: 'btn btn-flat center' %>
 </div>
 <div class="break"></div>
 <%= render 'shared/footer' %>
