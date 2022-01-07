@@ -4,7 +4,7 @@
     <p>Je vous invite à poser vos questions et reviens vers dans 24 h</p>
     <a class="btn btn-flat center" href="#">Apply now</a>
     <a class="btn call-to-action center" href="#">Apply now</a>
-    <%= link_to 'Déconnexion', destroy_user_session_path, class: 'btn btn-flat center' %>
+    <%= link_to 'Déconnexion', destroy_user_session_path, method: :delete, class: 'btn btn-flat center' %>
   </div>
 </div>
 <%= render 'shared/navigation' %>
