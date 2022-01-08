@@ -1,10 +1,39 @@
-<div class="banner" id='user' style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://res.cloudinary.com/da2krghvd/image/upload/v1641110266/Portfolio/nick-nice-gPm8h3DS1s4-unsplash.jpg);">
+<div class="user" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://res.cloudinary.com/da2krghvd/image/upload/v1641110266/Portfolio/nick-nice-gPm8h3DS1s4-unsplash.jpg);">
   <div class="container">
     <h1>Bonjour <strong><%= current_user.name %></strong> !</h1>
     <p>Je vous invite à poser vos questions et reviens vers dans 24 h</p>
     <%= link_to 'Créer un projet', new_project_path, class: "btn btn-flat center" %>
     <a class="btn call-to-action center" href="#">Apply now</a>
     <%= link_to 'Déconnexion', destroy_user_session_path, method: :delete, class: 'btn btn-flat center' %>
+    <% if current_user.projects.present? %>
+      <div class="row">
+        <div class="col-lg-6 col-md-8 col-sm-12 col-xs-12 mx-auto">
+          <% current_user.projects.each do |project| %>
+            <div class="card-project">
+              <img src="https://res.cloudinary.com/da2krghvd/image/upload/v1641484934/Portfolio/2857989.jpg" class='img-fluid' />
+              <img src="https://res.cloudinary.com/da2krghvd/image/upload/v1641133300/Portfolio/ezgif.com-gif-maker.gif" class='logo' />
+              <p class="trade">Votre demande</p>
+              <div class="card-project-infos">
+                <% if project.choice.present? %>
+                  <p id="info"><%= project.choice.name %></p>
+                <% end %>
+                <% if project.services.present? %>
+                  <% project.services.each do |service| %>
+                    <p id="info"><%= service.name %></p>
+                  <% end %>
+                <% end %>
+                <% if project.question.present? %>
+                  <p id="question">Votre question</p>
+                  <p id="info"><%= project.question %></p>
+                <% end %>
+              </div>
+              <%= link_to 'Éditer', edit_project_path(project), class: "btn btn-flat center" %>
+              <%= link_to "Annuler", project_path(project), method: :delete, data: { confirm: "Êtes vous sûr?" }, class: "btn btn-flat center" %>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    <% end %>
   </div>
 </div>
 <%= render 'shared/navigation' %>
