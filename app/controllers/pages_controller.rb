@@ -14,6 +14,6 @@ class PagesController < ApplicationController
   end
 
   def download_pdf
-    send_file "#{Rails.root}/app/assets/images/Philippe_Chambon.pdf", type: "application/pdf", x_sendfile: true
+    send_file "#{Rails.root}/app/assets/images/CV_Philippe_chambonCPD.pdf", type: "application/pdf", x_sendfile: true
   end
 end
