@@ -2,7 +2,11 @@
   <div class="container slogan-blue">
     <h1>Parez la pierre,<strong> elle devient merveille !</strong></h1>
     <p>Explorez <strong>les projets</strong> sur lesquels j'ai pu intervenir</p>
-    <%= link_to 'Parlons ensemble', new_user_registration_path, class: 'btn call-to-action center' %>
+    <% if user_signed_in? %>
+      <%= link_to 'Parlons ensemble', current_user, class: 'btn call-to-action center' %>
+    <% else %>
+      <div class="btn call-to-action center" id='connexion' data-toggle="modal" data-target="#connexionModal" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">Parlons ensemble</div>
+    <% end %>
   </div>
 </div>
 <div class="transition">
