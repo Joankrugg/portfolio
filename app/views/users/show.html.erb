@@ -2,7 +2,7 @@
   <div class="container">
     <h1>Bonjour <strong><%= current_user.name %></strong> !</h1>
     <p>Je vous invite à poser vos questions et reviens vers dans 24 h</p>
-    <%= link_to 'Créer un projet', new_project_path, class: "btn btn-flat center" %>
+    <%= link_to 'Créer un projet', new_project_path, class: "btn call-to-action center" %>
     <%= link_to 'Déconnexion', destroy_user_session_path, method: :delete, class: 'btn btn-flat center' %>
     <% if current_user.projects.present? %>
       <div class="row">
