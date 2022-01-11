@@ -4,6 +4,7 @@
   padding: 8px 24px;
   border-radius: 4px;
   transition: background 0.3s ease;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
 }
 
 .btn-flat:hover {
@@ -13,14 +14,32 @@
 }
 
 .call-to-action{
-  color: $brand;
-  background: linear-gradient(180deg, black, transparent);
+  color: white;
   border: 1px solid white;
   padding: 8px 24px;
   border-radius: 4px;
   transition: background 0.3s ease;
+  transition: background 0.3s ease;
 }
+
 .call-to-action:hover {
+  border: 1px solid lightsalmon;
+  background: transparent;
+  color: lightsalmon;
+}
+
+
+.btn-banner{
+  color: $brand;
+  background: linear-gradient(180deg, black, transparent);
+  border: 2px solid;
+  padding: 8px 24px;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+  border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+}
+
+.btn-banner:hover {
   background: $brand;
   color: white;
 }
