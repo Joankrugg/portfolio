@@ -13,6 +13,20 @@
   opacity: 0.8;
 }
 
+.btn-flat-on-white {
+  color: $brand;
+  border: 1px solid $brand;
+  padding: 8px 24px;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+.btn-flat-on-white:hover {
+  background: $brand;
+  color: white;
+  opacity: 0.8;
+}
+
 .call-to-action{
   color: white;
   border: 1px solid white;
@@ -23,9 +37,9 @@
 }
 
 .call-to-action:hover {
-  border: 1px solid lightsalmon;
-  background: transparent;
-  color: lightsalmon;
+  background: $brand;
+  color: white;
+  opacity: 0.8;
 }
 
 
@@ -114,3 +128,4 @@ a:hover{
 .action:hover{
   color: $brand;
 }
+
