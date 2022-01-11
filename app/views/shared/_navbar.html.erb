@@ -11,7 +11,7 @@
       <%= link_to 'parcours', pages_journey_path, class: 'link' %>
       <%= link_to 'portfolio', pages_portfolio_path, class: 'link' %>
       <% if user_signed_in? %>
-        <%= link_to "Compte", current_user, class: "btn btn-flat", id: 'chat' %>
+        <%= link_to "Compte", current_user, class: "btn btn-flat", id: 'connexion' %>
       <% else %>
         <div class="btn btn-flat" id='connexion' data-toggle="modal" data-target="#connexionModal" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">connexion</div>
       <% end %>
