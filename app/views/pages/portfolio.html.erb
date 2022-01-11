@@ -3,9 +3,9 @@
     <h1>Parez la pierre,<strong> elle devient merveille !</strong></h1>
     <p>Explorez <strong>les projets</strong> sur lesquels j'ai pu intervenir</p>
     <% if user_signed_in? %>
-      <%= link_to 'Parlons ensemble', current_user, class: 'btn call-to-action center' %>
+      <%= link_to 'Parlons ensemble', current_user, class: 'btn btn-flat center' %>
     <% else %>
-      <div class="btn call-to-action center" id='connexion' data-toggle="modal" data-target="#connexionModal" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">Parlons ensemble</div>
+      <div class="btn btn-flat center" id='connexion' data-toggle="modal" data-target="#connexionModal" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">Parlons ensemble</div>
     <% end %>
   </div>
 </div>
