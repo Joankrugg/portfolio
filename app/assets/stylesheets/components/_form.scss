@@ -4,7 +4,7 @@
 .login-form{
   margin-top: 40px;
   padding: 80px 20px;
-  background: transparent;
+  background-color: rgb(0, 3, 4);
   color: white;
   border-radius: 6px;
 }
@@ -29,7 +29,8 @@
 }
 
 .form{
-  background-color: white;
+  background-color: rgba(245, 245, 245, 0.1);
+  border-radius: 4px;
   text-align: center;
   padding: 30px;
 }
@@ -46,4 +47,45 @@
 
 .login-form .call-to-action {
   width: 100%
+}
+.squaretag-item {
+  display: inline-block;
+}
+
+.squaretag-selector {
+  position: absolute;
+  transform: scale(0);
+}
+
+.squaretag-selector + label {
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  font-family: 'Oswald';
+  font-weight: lighter;
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: white;
+  background-color: $light-gray;
+  color: #3C3C3C;
+  border: 1px solid #3C3C3C;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+.squaretag-selector:hover + label {
+  background-color: $brand;
+  border: 1px solid white;
+  color: white;
+}
+
+.squaretag-selector:checked + label {
+  background-color: $brand;
+  color: white;
+}
+.col-form-label{
+  color: white;
+}
+
+.string{
+  color: white;
 }
