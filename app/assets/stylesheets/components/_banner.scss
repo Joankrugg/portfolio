@@ -25,11 +25,11 @@
   -webkit-filter: blur(8px);
 }
 
-p strong{
+strong{
   color: lightsalmon;
 }
 
-h1 strong{
+.blue strong{
   color: $brand;
 }
 
@@ -70,42 +70,18 @@ h1 strong{
   margin: 0;
   color: white;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
-  font-size: 40px;
+  font-size: 32px;
   font-weight: lighter;
   text-align: center;
 }
 
 .slogan p {
-  font-size: 26px;
+  font-size: 20px;
   font-weight: lighter;
   color: white;
   opacity: 1;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
   text-align: center;
-}
-.slogan-blue h1 {
-  margin: 0;
-  color: white;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
-  font-size: 40px;
-  font-weight: lighter;
-  text-align: center;
-}
-
-.slogan-blue p {
-  font-size: 26px;
-  font-weight: lighter;
-  color: white;
-  opacity: 1;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
-  text-align: center;
-}
-.slogan-blue h1 strong{
-  color: $brand;
-}
-
-.slogan-blue p strong{
-  color: lightsalmon;
 }
 
 h1 {
@@ -133,7 +109,6 @@ p {
 #discovery h1{
   text-align: center;
   margin-bottom: 60px;
-
 }
 
 #journey{
@@ -158,4 +133,5 @@ p {
 .break{
   width: 100%;
   height: 8px;
+  margin: 0px;
 }
