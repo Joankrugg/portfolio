@@ -127,6 +127,17 @@ a:hover{
 .action:hover{
   color: lightsalmon;
 }
+.home-action{
+  font-size: 60px;
+  color: white;
+  width: 60px;
+  display: block;
+  margin: 0px auto 30px auto;
+}
+
+.home-action:hover{
+  color: $brand;
+}
 .large{
   width: 100%;
 }
