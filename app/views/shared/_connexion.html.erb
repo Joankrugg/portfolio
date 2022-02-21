@@ -8,11 +8,8 @@
         </button>
       </div>
       <div class="modal-body">
-        <%= link_to new_user_session_path do %>
-          <p class="btn-nav-modern">J'ai déjà un compte</p>
-        <% end %>
-        <%= link_to new_user_registration_path do %>
-          <p class="btn-nav-modern">Créer un compte contact</p>
+        <%= link_to download_pdf_path, target: "_blank" do %>
+          <p class="btn-nav-modern">Prenez mon CV</p>
         <% end %>
       </div>
       <div class="modal-footer">
